@@ -1,0 +1,12 @@
+#THIS IS A SAMPLE CONFIG FILE. 
+#To run the bot you need to make a copy of this file named "confg.yml" and replace the placeholder values
+
+
+apitoken: api-token-here
+
+log: 'path/to/log/file'
+
+creators: 
+-your-id-here
+
+log_channel: 'group or chanel id/username'
