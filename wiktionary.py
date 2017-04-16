@@ -74,14 +74,14 @@ def wt_define(word, lang):
 def wt_pronounce(word, lang):
     resp = []
     wt_result = parser.fetch(word, lang)
-    ipa = str('\n'.join(wt_result[0]['pronunciations']))
+    ipa = ('\n'.join(wt_result[0]['pronunciations']))
     resp.append(word)
-    audio = str('\n'.join(wt_result[0]['audioLinks']))
+    audio = '\n'.join(wt_result[0]['audioLinks'])
 
     resp.append(ipa)
     resp.append(audio)
 
-    return str('\n'.join(resp))
+    return '\n'.join(resp)
 
 
 def wt_full(word, lang):
