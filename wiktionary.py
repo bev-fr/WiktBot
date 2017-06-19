@@ -1,13 +1,13 @@
 from telegram import InlineQueryResultArticle, InputTextMessageContent
 from uuid import uuid4
-import json
 from wiktionaryparser import WiktionaryParser
-import ast
 from config import creator
+from background import background
+import ast
 
 parser = WiktionaryParser()
 
-
+@background
 def search(bot, update):
     query = update.inline_query.query
     results = list()
